@@ -1,0 +1,18 @@
+/GROUP-9-ASSIGNMENT--MVC/nbproject/private/
+/GROUP9MVC/nbproject/private/
+# Compiled Java files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Build folders
+build/
+dist/
+nbbuild/
+
+# Windows specific files
+Thumbs.db
+Desktop.ini
