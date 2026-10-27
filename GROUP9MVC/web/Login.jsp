@@ -42,20 +42,20 @@
             </div>
 
 
-            <form action="LoginServelet" method="POST">
+            <form action="LoginServlet" method="POST">
 
                 <div class="mb-3">
 
-                    <label for="username"
+                    <label for="Name"
                            class="form-label">
-                        Username
+                        Name
                     </label>
 
                     <input type="text"
                            class="form-control"
-                           id="username"
-                           name="username"
-                           placeholder="Enter your username"
+                           id="Name"
+                           name="Name"
+                           placeholder="Enter your Name"
                            required>
 
                 </div>
