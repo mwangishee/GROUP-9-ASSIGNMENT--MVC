@@ -348,7 +348,7 @@ input:checked + .slider:before { transform: translateX(26px); }
 
 .main-content {
     flex: 1;
-    margin-left: 260px; /* Offset for fixed sidebar */
+    margin-left: 260px;
     padding: 30px 40px;
 }
 
