@@ -54,7 +54,7 @@
             </form>
             
             <div class="auth-footer">
-                <p>Already have an account? <a href="login.jsp" class="signup-link">Login here</a></p>
+                <p>Already have an account? <a href="Login.jsp" class="signup-link">Login here</a></p>
             </div>
         </div>
         

@@ -1,112 +1,64 @@
-<%@ page contentType="text/html;charset=UTF-8"
-         language="java" %>
-
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Login | ShopSmart</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ShopSmart</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-<body>
-
-    <%@ include file="Header.jsp" %>
-
-
-    <main class="container">
-
-        <div class="form-card">
-
-            <div class="text-center mb-4">
-
-                <h2 class="fw-bold">
-                    Welcome Back!
-                </h2>
-
-                <p class="text-muted">
-                    Sign in to continue shopping.
-                </p>
-
+<body class="auth-page">
+    <div class="auth-container">
+        <!-- Left Side - Form -->
+        <div class="auth-form-container">
+            <div class="auth-logo">
+                <h1><i class="fas fa-shopping-cart"></i> ShopSmart</h1>
+                <p>Welcome back! Please login to your account</p>
             </div>
-
-
-            <form action="LoginServlet" method="POST">
-
-                <div class="mb-3">
-
-                    <label for="Name"
-                           class="form-label">
-                        Name
-                    </label>
-
-                    <input type="text"
-                           class="form-control"
-                           id="Name"
-                           name="Name"
-                           placeholder="Enter your Name"
-                           required>
-
+            
+            <form action="LoginServlet" method="post" class="auth-form">
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
-
-
-                <div class="mb-3">
-
-                    <label for="password"
-                           class="form-label">
-                        Password
-                    </label>
-
-                    <input type="password"
-                           class="form-control"
-                           id="password"
-                           name="password"
-                           placeholder="Enter your password"
-                           required>
-
+                
+                <div class="form-group">
+                    <label for="password"><i class="fas fa-lock"></i> Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
                 </div>
-
-
-                <button type="submit"
-                        class="btn btn-warning w-100 py-2">
-                    Login
+                
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                
+                <button type="submit" class="btn-primary">
+                    <i class="fas fa-sign-in-alt"></i> Login
                 </button>
-
             </form>
-
-
-            <p class="text-center mt-4 mb-0">
-
-                Don't have an account?
-
-                <a href="register.jsp">
-                    Register here
-                </a>
-
-            </p>
-
+            
+            <div class="auth-footer">
+                <p>Don't have an account? <a href="register.jsp" class="signup-link">Sign up here</a></p>
+            </div>
         </div>
-
-    </main>
-
-
-    <%@ include file="Footer.jsp" %>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
-
+        
+        <!-- Right Side - Info -->
+        <div class="auth-info">
+            <div class="auth-info-content">
+                <h2>Shop Smarter, Live Better</h2>
+                <p>Access exclusive deals, track your orders, and enjoy a personalized shopping experience.</p>
+                <ul class="auth-features">
+                    <li><i class="fas fa-check-circle"></i> Fast & Secure Checkout</li>
+                    <li><i class="fas fa-check-circle"></i> Order Tracking</li>
+                    <li><i class="fas fa-check-circle"></i> Exclusive Member Deals</li>
+                    <li><i class="fas fa-check-circle"></i> 24/7 Customer Support</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
