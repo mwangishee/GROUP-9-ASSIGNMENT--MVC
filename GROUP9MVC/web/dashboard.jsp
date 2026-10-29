@@ -136,7 +136,6 @@
         const toggle = document.getElementById('darkModeToggle');
         const body = document.body;
 
-        // Check if user previously selected dark mode
         if (localStorage.getItem('theme') === 'dark') {
             body.classList.add('dark-mode');
             toggle.checked = true;
