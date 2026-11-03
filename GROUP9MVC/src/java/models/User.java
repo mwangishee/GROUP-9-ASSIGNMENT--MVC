@@ -1,26 +1,45 @@
+
 package com.group9.models;
 
 public class User {
 
     private int userId;
+
     private String firstName;
+
     private String lastName;
+
     private String email;
-    private String password;   // stored in the password_hash column
-    private String role;       // "ADMIN" or "CUSTOMER" (derived from is_admin)
+
+    private String password;
+
+    private String role;
+
+    // Default Constructor
 
     public User() {
+
     }
+
+    // Parameterized Constructor
 
     public User(int userId, String firstName, String lastName,
                 String email, String password, String role) {
+
         this.userId = userId;
+
         this.firstName = firstName;
+
         this.lastName = lastName;
+
         this.email = email;
+
         this.password = password;
+
         this.role = role;
     }
+
+    // Getters and Setters
 
     public int getUserId() {
         return userId;
@@ -69,4 +88,5 @@ public class User {
     public void setRole(String role) {
         this.role = role;
     }
+
 }
